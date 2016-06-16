@@ -1,0 +1,5 @@
+这是一个美丽又悲伤故事.
+
+
+T --资源文件默认为
+/public /static /resources /webjars /classes:resources

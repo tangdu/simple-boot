@@ -1,0 +1,1255 @@
+00:19:55.285 [Thread-13] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3361135c: startup date [Tue Jun 14 23:52:01 CST 2016]; root of context hierarchy
+00:19:55.312 [Thread-13] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+00:19:55.323 [Thread-13] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans on shutdown
+00:19:55.325 [Thread-13] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans
+00:19:55.329 [Thread-13] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+00:19:55.330 [Thread-13] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+00:19:55.332 [Thread-13] INFO  o.s.c.e.EhCacheManagerFactoryBean - Shutting down EhCache CacheManager
+00:19:55.344 [Thread-13] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+00:19:55.357 [Thread-13] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@54883a73{HTTP/1.1}{0.0.0.0:9096}
+00:19:55.360 [Thread-13] INFO  application - Destroying Spring FrameworkServlet 'dispatcherServlet'
+00:19:55.361 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@2a0b1b4{/simple,file:/private/var/folders/tn/zvt_pptn0l92zc7_m7yx59wr0000gn/T/jetty-docbase.943918073701757386.9096/,UNAVAILABLE}
+00:19:59.343 [main] INFO  com.tdu.run.Application - Starting Application on tangdu.local with PID 18348 (/Users/tangdu/mystudy/javaspace/simple-boot/bin started by tangdu in /Users/tangdu/mystudy/javaspace/simple-boot)
+00:19:59.350 [main] INFO  com.tdu.run.Application - No active profile set, falling back to default profiles: default
+00:19:59.441 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@672f0924: startup date [Wed Jun 15 00:19:59 CST 2016]; root of context hierarchy
+00:19:59.538 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+00:20:01.829 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ebe94c05] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:20:02.008 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$34fb8223] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:20:02.629 [main] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 9096
+00:20:02.631 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.2.16.v20160414
+00:20:02.724 [main] INFO  application - Initializing Spring embedded WebApplicationContext
+00:20:02.725 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3283 ms
+00:20:04.880 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+00:20:04.882 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+00:20:04.883 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'com.tdu.simple.servlet.TraceServlet' to [/boot_trace/*]
+00:20:04.884 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'metricFilter' to: [/*]
+00:20:04.887 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+00:20:04.889 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+00:20:04.890 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+00:20:04.890 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+00:20:04.891 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+00:20:04.891 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'webStatFilter' to: [/*]
+00:20:04.891 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+00:20:05.457 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@58e994e{/simple,file:/private/var/folders/tn/zvt_pptn0l92zc7_m7yx59wr0000gn/T/jetty-docbase.1734755558247838497.9096/,AVAILABLE}
+00:20:05.465 [main] INFO  org.eclipse.jetty.server.Server - Started @7786ms
+00:20:05.904 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@672f0924: startup date [Wed Jun 15 00:19:59 CST 2016]; root of context hierarchy
+00:20:06.008 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index || /]}" onto public java.lang.String com.tdu.simple.web.IndexController.index()
+00:20:06.015 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+00:20:06.016 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+00:20:06.133 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:20:06.144 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:20:06.811 [main] INFO  o.s.c.e.EhCacheManagerFactoryBean - Initializing EhCache CacheManager
+00:20:07.581 [main] INFO  o.f.c.internal.util.VersionPrinter - Flyway 3.2.1 by Boxfuse
+00:20:07.816 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+00:20:08.127 [main] INFO  o.f.c.i.dbsupport.DbSupportFactory - Database: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true (MySQL 5.6)
+00:20:08.418 [main] INFO  o.f.core.internal.command.DbValidate - Validated 3 migrations (execution time 00:00.274s)
+00:20:08.569 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `test`: 1.0.0.20150128
+00:20:08.574 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `test` is up to date. No migration necessary.
+00:20:09.945 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:20:09.947 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:20:09.948 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+00:20:09.948 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:20:09.949 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:20:09.955 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:20:09.956 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+00:20:09.957 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:20:09.957 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:20:09.958 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:20:09.961 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/flyway || /flyway.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:20:09.961 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:20:09.962 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+00:20:10.578 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+00:20:10.579 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+00:20:10.588 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+00:20:10.588 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+00:20:10.593 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+00:20:10.595 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+00:20:10.674 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'flywayEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=flywayEndpoint]
+00:20:10.682 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+00:20:10.690 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+00:20:10.697 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+00:20:10.707 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+00:20:10.714 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+00:20:10.720 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+00:20:10.731 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+00:20:10.739 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+00:20:10.746 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+00:20:10.788 [main] INFO  application - Initializing Spring FrameworkServlet 'dispatcherServlet'
+00:20:10.788 [main] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+00:20:10.819 [main] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+00:20:10.843 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@62b4c9e2{HTTP/1.1}{0.0.0.0:9096}
+00:20:10.847 [main] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainer - Jetty started on port(s) 9096 (http/1.1)
+00:20:10.853 [main] INFO  com.tdu.run.Application - Started Application in 12.333 seconds (JVM running for 13.175)
+00:25:39.647 [Thread-13] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@672f0924: startup date [Wed Jun 15 00:19:59 CST 2016]; root of context hierarchy
+00:25:39.649 [Thread-13] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+00:25:39.654 [Thread-13] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans on shutdown
+00:25:39.654 [Thread-13] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans
+00:25:39.658 [Thread-13] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+00:25:39.658 [Thread-13] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+00:25:39.661 [Thread-13] INFO  o.s.c.e.EhCacheManagerFactoryBean - Shutting down EhCache CacheManager
+00:25:39.667 [Thread-13] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+00:25:39.676 [Thread-13] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@62b4c9e2{HTTP/1.1}{0.0.0.0:9096}
+00:25:39.677 [Thread-13] INFO  application - Destroying Spring FrameworkServlet 'dispatcherServlet'
+00:25:39.677 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@58e994e{/simple,file:/private/var/folders/tn/zvt_pptn0l92zc7_m7yx59wr0000gn/T/jetty-docbase.1734755558247838497.9096/,UNAVAILABLE}
+00:25:44.390 [main] INFO  com.tdu.run.Application - Starting Application on tangdu.local with PID 18366 (/Users/tangdu/mystudy/javaspace/simple-boot/bin started by tangdu in /Users/tangdu/mystudy/javaspace/simple-boot)
+00:25:44.395 [main] INFO  com.tdu.run.Application - No active profile set, falling back to default profiles: default
+00:25:44.648 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+00:25:44.766 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@265a892c: startup date [Wed Jun 15 00:25:44 CST 2016]; root of context hierarchy
+00:25:46.467 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9f211fd5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:25:46.646 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$e83355f3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:25:47.279 [main] INFO  org.xnio - XNIO version 3.3.6.Final
+00:25:47.303 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.3.6.Final
+00:25:47.406 [main] WARN  io.undertow.websockets.jsr - UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+00:25:47.406 [main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+00:25:47.436 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+00:25:47.437 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2671 ms
+00:25:48.528 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+00:25:48.536 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+00:25:48.536 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'com.tdu.simple.servlet.TraceServlet' to [/boot_trace/*]
+00:25:48.542 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'metricFilter' to: [/*]
+00:25:48.543 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+00:25:48.543 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+00:25:48.543 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+00:25:48.543 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+00:25:48.543 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+00:25:48.544 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'webStatFilter' to: [/*]
+00:25:48.544 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+00:25:49.035 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@265a892c: startup date [Wed Jun 15 00:25:44 CST 2016]; root of context hierarchy
+00:25:49.143 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index || /]}" onto public java.lang.String com.tdu.simple.web.IndexController.index()
+00:25:49.147 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+00:25:49.148 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+00:25:49.242 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:25:49.242 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:25:49.652 [main] INFO  o.s.c.e.EhCacheManagerFactoryBean - Initializing EhCache CacheManager
+00:25:49.966 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+00:25:49.969 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+00:25:49.970 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+00:25:49.982 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=CronPlugin,interface=CronPlugin]
+00:25:49.987 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=MailPlugin,interface=MailPlugin]
+00:25:49.990 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+00:25:49.993 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+00:25:49.995 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=JavaLanguage,interface=Language]
+00:25:49.996 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=ScriptLanguage,interface=Language]
+00:25:49.997 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+00:25:49.998 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+00:25:50.000 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.port=2000 from properties
+00:25:50.000 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.auth_timeout=600000 from properties
+00:25:50.001 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.idle_timeout=600000 from properties
+00:25:50.001 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.default_encoding=UTF-8 from properties
+00:25:50.001 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth=simple from properties
+00:25:50.001 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth.simple.username=admin from properties
+00:25:50.001 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth.simple.password=admin from properties
+00:25:50.013 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+00:25:50.014 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+00:25:50.014 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+00:25:50.014 [main] INFO  org.crsh.ssh.SSHPlugin - Booting SSHD
+00:25:50.042 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+00:25:50.047 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=JavaLanguage,interface=Language]
+00:25:50.047 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=ScriptLanguage,interface=Language]
+00:25:50.056 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+00:25:50.476 [main] INFO  o.a.sshd.common.util.SecurityUtils - Trying to register BouncyCastle as a JCE provider
+00:25:51.527 [main] INFO  o.a.sshd.common.util.SecurityUtils - Registration succeeded
+00:25:51.592 [main] INFO  org.crsh.ssh.term.SSHLifeCycle - About to start CRaSSHD
+00:25:51.631 [main] INFO  org.crsh.ssh.term.SSHLifeCycle - CRaSSHD started on port 2000
+00:25:51.631 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+00:25:51.631 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+00:25:51.631 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=CronPlugin,interface=CronPlugin]
+00:25:51.632 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=MailPlugin,interface=MailPlugin]
+00:25:51.903 [main] INFO  o.f.c.internal.util.VersionPrinter - Flyway 3.2.1 by Boxfuse
+00:25:51.982 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+00:25:52.271 [main] INFO  o.f.c.i.dbsupport.DbSupportFactory - Database: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true (MySQL 5.6)
+00:25:52.410 [main] INFO  o.f.core.internal.command.DbValidate - Validated 3 migrations (execution time 00:00.125s)
+00:25:52.461 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `test`: 1.0.0.20150128
+00:25:52.462 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `test` is up to date. No migration necessary.
+00:25:53.162 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+00:25:53.163 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:25:53.164 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+00:25:53.165 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:25:53.165 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:25:53.166 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:25:53.169 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/flyway || /flyway.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:25:53.170 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+00:25:53.171 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:25:53.171 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:25:53.172 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:25:53.172 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:25:53.173 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:25:53.563 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+00:25:53.565 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+00:25:53.580 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+00:25:53.580 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+00:25:53.587 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+00:25:53.589 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+00:25:53.632 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'flywayEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=flywayEndpoint]
+00:25:53.642 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+00:25:53.650 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+00:25:53.657 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+00:25:53.663 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+00:25:53.670 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+00:25:53.684 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+00:25:53.699 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+00:25:53.707 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+00:25:53.713 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+00:25:53.890 [main] INFO  o.s.b.c.e.u.UndertowEmbeddedServletContainer - Undertow started on port(s) 9096 (http)
+00:25:53.899 [main] INFO  com.tdu.run.Application - Started Application in 9.876 seconds (JVM running for 10.722)
+00:26:04.275 [Thread-5] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@265a892c: startup date [Wed Jun 15 00:25:44 CST 2016]; root of context hierarchy
+00:26:04.278 [Thread-5] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+00:26:04.283 [Thread-5] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans on shutdown
+00:26:04.283 [Thread-5] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans
+00:26:04.286 [Thread-5] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+00:26:04.286 [Thread-5] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+00:26:04.295 [Thread-5] INFO  o.s.c.e.EhCacheManagerFactoryBean - Shutting down EhCache CacheManager
+00:26:04.299 [Thread-5] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+00:26:09.542 [main] INFO  com.tdu.run.Application - Starting Application on tangdu.local with PID 18367 (/Users/tangdu/mystudy/javaspace/simple-boot/bin started by tangdu in /Users/tangdu/mystudy/javaspace/simple-boot)
+00:26:09.546 [main] INFO  com.tdu.run.Application - No active profile set, falling back to default profiles: default
+00:26:09.774 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+00:26:09.835 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e229c98: startup date [Wed Jun 15 00:26:09 CST 2016]; root of context hierarchy
+00:26:11.411 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$95258f49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:26:11.569 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$de37c567] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:26:12.165 [main] INFO  org.xnio - XNIO version 3.3.6.Final
+00:26:12.180 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.3.6.Final
+00:26:12.243 [main] WARN  io.undertow.websockets.jsr - UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+00:26:12.244 [main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+00:26:12.256 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+00:26:12.256 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2421 ms
+00:26:13.330 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+00:26:13.334 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+00:26:13.335 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'com.tdu.simple.servlet.TraceServlet' to [/boot_trace/*]
+00:26:13.337 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'metricFilter' to: [/*]
+00:26:13.338 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+00:26:13.339 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+00:26:13.339 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+00:26:13.339 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+00:26:13.339 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+00:26:13.340 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'webStatFilter' to: [/*]
+00:26:13.340 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+00:26:13.823 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e229c98: startup date [Wed Jun 15 00:26:09 CST 2016]; root of context hierarchy
+00:26:13.944 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index || /]}" onto public java.lang.String com.tdu.simple.web.IndexController.index()
+00:26:13.949 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+00:26:13.950 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+00:26:14.055 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:26:14.056 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:26:14.443 [main] INFO  o.s.c.e.EhCacheManagerFactoryBean - Initializing EhCache CacheManager
+00:26:14.755 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+00:26:14.757 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+00:26:14.759 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+00:26:14.770 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=CronPlugin,interface=CronPlugin]
+00:26:14.774 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=MailPlugin,interface=MailPlugin]
+00:26:14.777 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+00:26:14.779 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+00:26:14.780 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=JavaLanguage,interface=Language]
+00:26:14.781 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=ScriptLanguage,interface=Language]
+00:26:14.782 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+00:26:14.783 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+00:26:14.786 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.port=2000 from properties
+00:26:14.787 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.auth_timeout=600000 from properties
+00:26:14.787 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.idle_timeout=600000 from properties
+00:26:14.787 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.default_encoding=UTF-8 from properties
+00:26:14.787 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth=simple from properties
+00:26:14.787 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth.simple.username=admin from properties
+00:26:14.787 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth.simple.password=admin from properties
+00:26:14.801 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+00:26:14.801 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+00:26:14.801 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+00:26:14.801 [main] INFO  org.crsh.ssh.SSHPlugin - Booting SSHD
+00:26:14.816 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+00:26:14.819 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=JavaLanguage,interface=Language]
+00:26:14.819 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=ScriptLanguage,interface=Language]
+00:26:14.827 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+00:26:15.232 [main] INFO  o.a.sshd.common.util.SecurityUtils - Trying to register BouncyCastle as a JCE provider
+00:26:16.571 [main] INFO  o.a.sshd.common.util.SecurityUtils - Registration succeeded
+00:26:16.652 [main] INFO  org.crsh.ssh.term.SSHLifeCycle - About to start CRaSSHD
+00:26:16.675 [main] INFO  org.crsh.ssh.term.SSHLifeCycle - CRaSSHD started on port 2000
+00:26:16.675 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+00:26:16.675 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+00:26:16.676 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=CronPlugin,interface=CronPlugin]
+00:26:16.676 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=MailPlugin,interface=MailPlugin]
+00:26:16.942 [main] INFO  o.f.c.internal.util.VersionPrinter - Flyway 3.2.1 by Boxfuse
+00:26:17.006 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+00:26:17.236 [main] INFO  o.f.c.i.dbsupport.DbSupportFactory - Database: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true (MySQL 5.6)
+00:26:17.367 [main] INFO  o.f.core.internal.command.DbValidate - Validated 3 migrations (execution time 00:00.117s)
+00:26:17.422 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `test`: 1.0.0.20150128
+00:26:17.423 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `test` is up to date. No migration necessary.
+00:26:18.080 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:26:18.081 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:26:18.082 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/flyway || /flyway.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:26:18.084 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+00:26:18.084 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:26:18.087 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:26:18.089 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:26:18.092 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+00:26:18.092 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:26:18.093 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:26:18.096 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+00:26:18.099 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:26:18.100 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:26:18.452 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+00:26:18.454 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+00:26:18.459 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+00:26:18.460 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+00:26:18.465 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+00:26:18.467 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+00:26:18.492 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'flywayEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=flywayEndpoint]
+00:26:18.500 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+00:26:18.508 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+00:26:18.515 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+00:26:18.522 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+00:26:18.531 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+00:26:18.538 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+00:26:18.551 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+00:26:18.558 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+00:26:18.569 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+00:26:18.661 [main] INFO  o.s.b.c.e.u.UndertowEmbeddedServletContainer - Undertow started on port(s) 9096 (http)
+00:26:18.668 [main] INFO  com.tdu.run.Application - Started Application in 9.446 seconds (JVM running for 9.897)
+00:27:24.630 [pool-5-thread-1] INFO  o.a.s.server.session.ServerSession - Server session created from /127.0.0.1:62623
+00:27:24.721 [pool-5-thread-1] INFO  o.a.s.server.session.ServerSession - Kex: server->client aes128-ctr hmac-md5 none
+00:27:24.721 [pool-5-thread-1] INFO  o.a.s.server.session.ServerSession - Kex: client->server aes128-ctr hmac-md5 none
+00:27:31.189 [pool-5-thread-5] INFO  o.a.s.s.s.ServerUserAuthService - Session admin@/127.0.0.1:62623 authenticated
+00:28:08.790 [Thread-5] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e229c98: startup date [Wed Jun 15 00:26:09 CST 2016]; root of context hierarchy
+00:28:08.794 [Thread-5] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+00:28:08.799 [Thread-5] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans on shutdown
+00:28:08.799 [Thread-5] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans
+00:28:08.802 [Thread-5] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+00:28:08.802 [Thread-5] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+00:28:08.813 [Thread-5] INFO  o.s.c.e.EhCacheManagerFactoryBean - Shutting down EhCache CacheManager
+00:28:08.817 [Thread-5] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+00:31:17.733 [main] INFO  com.tdu.run.Application - Starting Application on tangdu.local with PID 18376 (/Users/tangdu/mystudy/javaspace/simple-boot/bin started by tangdu in /Users/tangdu/mystudy/javaspace/simple-boot)
+00:31:17.745 [main] INFO  com.tdu.run.Application - No active profile set, falling back to default profiles: default
+00:31:17.953 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+00:31:18.177 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@27140b44: startup date [Wed Jun 15 00:31:18 CST 2016]; root of context hierarchy
+00:31:21.550 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$78b7f36f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:31:21.893 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$c1ca298d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:31:22.842 [main] INFO  org.xnio - XNIO version 3.3.6.Final
+00:31:22.860 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.3.6.Final
+00:31:22.930 [main] WARN  io.undertow.websockets.jsr - UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+00:31:22.930 [main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+00:31:22.944 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+00:31:22.945 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4768 ms
+00:31:24.527 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+00:31:24.538 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+00:31:24.540 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'com.tdu.simple.servlet.TraceServlet' to [/boot_trace/*]
+00:31:24.545 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'metricFilter' to: [/*]
+00:31:24.547 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+00:31:24.549 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+00:31:24.552 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+00:31:24.555 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+00:31:24.556 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+00:31:24.557 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'webStatFilter' to: [/*]
+00:31:24.557 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+00:31:25.107 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@27140b44: startup date [Wed Jun 15 00:31:18 CST 2016]; root of context hierarchy
+00:31:25.202 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index || /]}" onto public java.lang.String com.tdu.simple.web.IndexController.index()
+00:31:25.206 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+00:31:25.206 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+00:31:25.303 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:31:25.303 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:31:25.724 [main] INFO  o.s.c.e.EhCacheManagerFactoryBean - Initializing EhCache CacheManager
+00:31:26.049 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+00:31:26.050 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+00:31:26.052 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+00:31:26.061 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=CronPlugin,interface=CronPlugin]
+00:31:26.065 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=MailPlugin,interface=MailPlugin]
+00:31:26.066 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+00:31:26.068 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+00:31:26.070 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=JavaLanguage,interface=Language]
+00:31:26.071 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=ScriptLanguage,interface=Language]
+00:31:26.072 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+00:31:26.073 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+00:31:26.074 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.port=2000 from properties
+00:31:26.075 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.auth_timeout=600000 from properties
+00:31:26.076 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.idle_timeout=600000 from properties
+00:31:26.076 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.default_encoding=UTF-8 from properties
+00:31:26.076 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth=simple from properties
+00:31:26.076 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth.simple.username=admin from properties
+00:31:26.077 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth.simple.password=admin from properties
+00:31:26.091 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+00:31:26.091 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+00:31:26.091 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+00:31:26.091 [main] INFO  org.crsh.ssh.SSHPlugin - Booting SSHD
+00:31:26.106 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+00:31:26.109 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=JavaLanguage,interface=Language]
+00:31:26.110 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=ScriptLanguage,interface=Language]
+00:31:26.115 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+00:31:26.565 [main] INFO  o.a.sshd.common.util.SecurityUtils - Trying to register BouncyCastle as a JCE provider
+00:31:27.323 [main] INFO  o.a.sshd.common.util.SecurityUtils - Registration succeeded
+00:31:27.376 [main] INFO  org.crsh.ssh.term.SSHLifeCycle - About to start CRaSSHD
+00:31:27.401 [main] INFO  org.crsh.ssh.term.SSHLifeCycle - CRaSSHD started on port 2000
+00:31:27.401 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+00:31:27.401 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+00:31:27.402 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=CronPlugin,interface=CronPlugin]
+00:31:27.402 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=MailPlugin,interface=MailPlugin]
+00:31:27.663 [main] INFO  o.f.c.internal.util.VersionPrinter - Flyway 3.2.1 by Boxfuse
+00:31:27.734 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+00:31:27.968 [main] INFO  o.f.c.i.dbsupport.DbSupportFactory - Database: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true (MySQL 5.6)
+00:31:28.093 [main] INFO  o.f.core.internal.command.DbValidate - Validated 3 migrations (execution time 00:00.111s)
+00:31:28.160 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `test`: 1.0.0.20150128
+00:31:28.161 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `test` is up to date. No migration necessary.
+00:31:28.936 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:31:28.937 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:31:28.938 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+00:31:28.938 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:31:28.939 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+00:31:28.940 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:31:28.942 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:31:28.943 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:31:28.944 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/flyway || /flyway.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:31:28.944 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:31:28.945 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:31:28.946 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+00:31:28.947 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:31:29.301 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+00:31:29.302 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+00:31:29.310 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+00:31:29.311 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+00:31:29.316 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+00:31:29.318 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+00:31:29.347 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'flywayEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=flywayEndpoint]
+00:31:29.354 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+00:31:29.361 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+00:31:29.370 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+00:31:29.378 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+00:31:29.385 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+00:31:29.392 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+00:31:29.402 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+00:31:29.409 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+00:31:29.420 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+00:31:29.509 [main] INFO  o.s.b.c.e.u.UndertowEmbeddedServletContainer - Undertow started on port(s) 9096 (http)
+00:31:29.518 [main] INFO  com.tdu.run.Application - Started Application in 12.282 seconds (JVM running for 13.112)
+00:31:44.640 [pool-5-thread-1] INFO  o.a.s.server.session.ServerSession - Server session created from /127.0.0.1:62637
+00:31:44.710 [pool-5-thread-1] INFO  o.a.s.server.session.ServerSession - Kex: server->client aes128-ctr hmac-md5 none
+00:31:44.710 [pool-5-thread-1] INFO  o.a.s.server.session.ServerSession - Kex: client->server aes128-ctr hmac-md5 none
+00:31:46.741 [pool-5-thread-1] INFO  o.a.s.s.s.ServerUserAuthService - Session admin@/127.0.0.1:62637 authenticated
+00:32:55.917 [pool-2-thread-6] ERROR o.c.shell.impl.command.CRaSHSession - Error while evaluating request 'echo ' echo : exception: Could not find matching constructor for: Person(java.lang.String, java.lang.String)
+groovy.lang.GroovyRuntimeException: Could not find matching constructor for: Person(java.lang.String, java.lang.String)
+	at groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1728)
+	at groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1531)
+	at org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:49)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:255)
+	at echo.run(echo:19)
+	at org.crsh.lang.impl.groovy.command.GroovyScriptShellCommand$2.open(GroovyScriptShellCommand.java:157)
+	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.open(CommandInvokerAdapter.java:114)
+	at org.crsh.shell.impl.command.pipeline.PipeLine.open(PipeLine.java:67)
+	at org.crsh.shell.impl.command.pipeline.PipeLine.open(PipeLine.java:52)
+	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:45)
+	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
+	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
+	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
+	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+00:33:16.224 [pool-2-thread-7] ERROR o.c.shell.impl.command.CRaSHSession - Error while evaluating request 'echo ' echo : exception: No signature of method: echo.Person() is applicable for argument types: (echo$_run_closure1) values: [echo$_run_closure1@69c3e028]
+Possible solutions: run(), run(), grep()
+groovy.lang.MissingMethodException: No signature of method: echo.Person() is applicable for argument types: (echo$_run_closure1) values: [echo$_run_closure1@69c3e028]
+Possible solutions: run(), run(), grep()
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:58)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:81)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at echo.run(echo:19)
+	at org.crsh.lang.impl.groovy.command.GroovyScriptShellCommand$2.open(GroovyScriptShellCommand.java:157)
+	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.open(CommandInvokerAdapter.java:114)
+	at org.crsh.shell.impl.command.pipeline.PipeLine.open(PipeLine.java:67)
+	at org.crsh.shell.impl.command.pipeline.PipeLine.open(PipeLine.java:52)
+	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:45)
+	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
+	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
+	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
+	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+00:33:22.191 [pool-2-thread-8] ERROR o.c.shell.impl.command.CRaSHSession - Error while evaluating request 'echo ' Could not compile command
+org.crsh.shell.impl.command.spi.CommandException: Could not compile command
+	at org.crsh.lang.impl.groovy.GroovyCompiler.compileCommand(GroovyCompiler.java:136)
+	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:128)
+	at org.crsh.lang.LanguageCommandResolver.resolveCommand2(LanguageCommandResolver.java:109)
+	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:100)
+	at org.crsh.shell.impl.command.CRaSH.getCommand(CRaSH.java:100)
+	at org.crsh.shell.impl.command.CRaSHSession.getCommand(CRaSHSession.java:96)
+	at org.crsh.lang.impl.script.PipeLineFactory.create(PipeLineFactory.java:89)
+	at org.crsh.lang.impl.script.ScriptRepl.eval(ScriptRepl.java:88)
+	at org.crsh.shell.impl.command.CRaSHSession.createProcess(CRaSHSession.java:163)
+	at org.crsh.shell.impl.async.AsyncProcess.execute(AsyncProcess.java:172)
+	at org.crsh.console.Console.iterate(Console.java:219)
+	at org.crsh.console.Console.on(Console.java:158)
+	at org.crsh.console.Console.on(Console.java:135)
+	at org.crsh.console.jline.JLineProcessor.run(JLineProcessor.java:204)
+	at org.crsh.ssh.term.CRaSHCommand.run(CRaSHCommand.java:99)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+echo: 19: unexpected token: { @ line 19, column 17.
+   def p=new Person{name:'dd'}
+                   ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:310)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:150)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:120)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:132)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:360)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:145)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:111)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:237)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:167)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:931)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:593)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:569)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:546)
+	at org.crsh.lang.impl.groovy.GroovyCompiler.compileCommand(GroovyCompiler.java:133)
+	... 15 common frames omitted
+00:35:20.357 [pool-2-thread-16] ERROR o.c.shell.impl.command.CRaSHSession - Error while evaluating request 'echo' Could not compile command
+org.crsh.shell.impl.command.spi.CommandException: Could not compile command
+	at org.crsh.lang.impl.groovy.GroovyCompiler.compileCommand(GroovyCompiler.java:136)
+	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:128)
+	at org.crsh.lang.LanguageCommandResolver.resolveCommand2(LanguageCommandResolver.java:109)
+	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:100)
+	at org.crsh.shell.impl.command.CRaSH.getCommand(CRaSH.java:100)
+	at org.crsh.shell.impl.command.CRaSHSession.getCommand(CRaSHSession.java:96)
+	at org.crsh.lang.impl.script.PipeLineFactory.create(PipeLineFactory.java:89)
+	at org.crsh.lang.impl.script.ScriptRepl.eval(ScriptRepl.java:88)
+	at org.crsh.shell.impl.command.CRaSHSession.createProcess(CRaSHSession.java:163)
+	at org.crsh.shell.impl.async.AsyncProcess.execute(AsyncProcess.java:172)
+	at org.crsh.console.Console.iterate(Console.java:219)
+	at org.crsh.console.Console.on(Console.java:158)
+	at org.crsh.console.Console.on(Console.java:135)
+	at org.crsh.console.jline.JLineProcessor.run(JLineProcessor.java:204)
+	at org.crsh.ssh.term.CRaSHCommand.run(CRaSHCommand.java:99)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+echo: 7: Invalid duplicate class definition of class echo : The source echo contains at least two definitions of the class echo.
+One of the classes is an explicit generated class using the class statement, the other is a class generated from the script body based on the file name. Solutions are to change the file name or to change the class name.
+ @ line 7, column 1.
+   class echo{
+   ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:310)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:946)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:593)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:569)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:546)
+	at org.crsh.lang.impl.groovy.GroovyCompiler.compileCommand(GroovyCompiler.java:133)
+	... 15 common frames omitted
+00:35:43.838 [pool-2-thread-17] ERROR o.c.shell.impl.command.CRaSHSession - Error while evaluating request 'echo' Could not compile command
+org.crsh.shell.impl.command.spi.CommandException: Could not compile command
+	at org.crsh.lang.impl.groovy.GroovyCompiler.compileCommand(GroovyCompiler.java:136)
+	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:128)
+	at org.crsh.lang.LanguageCommandResolver.resolveCommand2(LanguageCommandResolver.java:109)
+	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:100)
+	at org.crsh.shell.impl.command.CRaSH.getCommand(CRaSH.java:100)
+	at org.crsh.shell.impl.command.CRaSHSession.getCommand(CRaSHSession.java:96)
+	at org.crsh.lang.impl.script.PipeLineFactory.create(PipeLineFactory.java:89)
+	at org.crsh.lang.impl.script.ScriptRepl.eval(ScriptRepl.java:88)
+	at org.crsh.shell.impl.command.CRaSHSession.createProcess(CRaSHSession.java:163)
+	at org.crsh.shell.impl.async.AsyncProcess.execute(AsyncProcess.java:172)
+	at org.crsh.console.Console.iterate(Console.java:219)
+	at org.crsh.console.Console.on(Console.java:158)
+	at org.crsh.console.Console.on(Console.java:135)
+	at org.crsh.console.jline.JLineProcessor.run(JLineProcessor.java:204)
+	at org.crsh.ssh.term.CRaSHCommand.run(CRaSHCommand.java:99)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+echo: 7: Invalid duplicate class definition of class echo : The source echo contains at least two definitions of the class echo.
+One of the classes is an explicit generated class using the class statement, the other is a class generated from the script body based on the file name. Solutions are to change the file name or to change the class name.
+ @ line 7, column 1.
+   class echo{
+   ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:310)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:946)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:593)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:569)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:546)
+	at org.crsh.lang.impl.groovy.GroovyCompiler.compileCommand(GroovyCompiler.java:133)
+	... 15 common frames omitted
+00:36:59.846 [Thread-5] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@27140b44: startup date [Wed Jun 15 00:31:18 CST 2016]; root of context hierarchy
+00:36:59.849 [Thread-5] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+00:36:59.854 [Thread-5] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans on shutdown
+00:36:59.855 [Thread-5] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans
+00:36:59.858 [Thread-5] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+00:36:59.859 [Thread-5] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+00:36:59.871 [Thread-5] INFO  o.s.c.e.EhCacheManagerFactoryBean - Shutting down EhCache CacheManager
+00:36:59.876 [Thread-5] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+00:37:04.374 [main] INFO  com.tdu.run.Application - Starting Application on tangdu.local with PID 18382 (/Users/tangdu/mystudy/javaspace/simple-boot/bin started by tangdu in /Users/tangdu/mystudy/javaspace/simple-boot)
+00:37:04.378 [main] INFO  com.tdu.run.Application - No active profile set, falling back to default profiles: default
+00:37:04.559 [main] INFO  com.tdu.run.Application - Starting Application on tangdu.local with PID 18383 (/Users/tangdu/mystudy/javaspace/simple-boot/bin started by tangdu in /Users/tangdu/mystudy/javaspace/simple-boot)
+00:37:04.563 [main] INFO  com.tdu.run.Application - No active profile set, falling back to default profiles: default
+00:37:04.825 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+00:37:04.884 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+00:37:04.949 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d59774c: startup date [Wed Jun 15 00:37:04 CST 2016]; root of context hierarchy
+00:37:05.045 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@30dfe0c6: startup date [Wed Jun 15 00:37:05 CST 2016]; root of context hierarchy
+00:37:07.481 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e176f90e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:37:07.577 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9f211fd5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:37:07.675 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$2a892f2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:37:07.857 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$e83355f3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:37:08.603 [main] INFO  org.xnio - XNIO version 3.3.6.Final
+00:37:08.623 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.3.6.Final
+00:37:08.753 [main] WARN  io.undertow.websockets.jsr - UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+00:37:08.753 [main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+00:37:08.785 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+00:37:08.786 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3837 ms
+00:37:08.839 [main] INFO  org.xnio - XNIO version 3.3.6.Final
+00:37:08.867 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.3.6.Final
+00:37:08.999 [main] WARN  io.undertow.websockets.jsr - UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+00:37:09.000 [main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+00:37:09.031 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+00:37:09.032 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3987 ms
+00:37:10.901 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+00:37:10.910 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+00:37:10.910 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'com.tdu.simple.servlet.TraceServlet' to [/boot_trace/*]
+00:37:10.913 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'metricFilter' to: [/*]
+00:37:10.918 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+00:37:10.918 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+00:37:10.918 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+00:37:10.918 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+00:37:10.918 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+00:37:10.918 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'webStatFilter' to: [/*]
+00:37:10.919 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+00:37:11.098 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+00:37:11.102 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+00:37:11.102 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'com.tdu.simple.servlet.TraceServlet' to [/boot_trace/*]
+00:37:11.105 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'metricFilter' to: [/*]
+00:37:11.106 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+00:37:11.107 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+00:37:11.107 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+00:37:11.107 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+00:37:11.107 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+00:37:11.107 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'webStatFilter' to: [/*]
+00:37:11.107 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+00:37:11.795 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d59774c: startup date [Wed Jun 15 00:37:04 CST 2016]; root of context hierarchy
+00:37:12.006 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index || /]}" onto public java.lang.String com.tdu.simple.web.IndexController.index()
+00:37:12.020 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@30dfe0c6: startup date [Wed Jun 15 00:37:05 CST 2016]; root of context hierarchy
+00:37:12.021 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+00:37:12.021 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+00:37:12.208 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:37:12.209 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:37:12.270 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index || /]}" onto public java.lang.String com.tdu.simple.web.IndexController.index()
+00:37:12.283 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+00:37:12.283 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+00:37:12.444 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:37:12.446 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:37:12.976 [main] INFO  o.s.c.e.EhCacheManagerFactoryBean - Initializing EhCache CacheManager
+00:37:13.182 [main] INFO  o.s.c.e.EhCacheManagerFactoryBean - Initializing EhCache CacheManager
+00:37:13.560 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+00:37:13.562 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+00:37:13.563 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+00:37:13.579 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=CronPlugin,interface=CronPlugin]
+00:37:13.585 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=MailPlugin,interface=MailPlugin]
+00:37:13.588 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+00:37:13.589 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+00:37:13.599 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=JavaLanguage,interface=Language]
+00:37:13.600 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=ScriptLanguage,interface=Language]
+00:37:13.601 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+00:37:13.602 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+00:37:13.604 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.port=2000 from properties
+00:37:13.605 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.auth_timeout=600000 from properties
+00:37:13.605 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.idle_timeout=600000 from properties
+00:37:13.605 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.default_encoding=UTF-8 from properties
+00:37:13.606 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth=simple from properties
+00:37:13.606 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth.simple.username=admin from properties
+00:37:13.606 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth.simple.password=admin from properties
+00:37:13.624 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+00:37:13.628 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+00:37:13.629 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+00:37:13.629 [main] INFO  org.crsh.ssh.SSHPlugin - Booting SSHD
+00:37:13.647 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+00:37:13.662 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=JavaLanguage,interface=Language]
+00:37:13.663 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=ScriptLanguage,interface=Language]
+00:37:13.669 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+00:37:13.761 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+00:37:13.764 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+00:37:13.766 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+00:37:13.789 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=CronPlugin,interface=CronPlugin]
+00:37:13.794 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=MailPlugin,interface=MailPlugin]
+00:37:13.797 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+00:37:13.799 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+00:37:13.800 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=JavaLanguage,interface=Language]
+00:37:13.801 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=ScriptLanguage,interface=Language]
+00:37:13.803 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+00:37:13.806 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+00:37:13.808 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.port=2000 from properties
+00:37:13.809 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.auth_timeout=600000 from properties
+00:37:13.809 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.idle_timeout=600000 from properties
+00:37:13.809 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.default_encoding=UTF-8 from properties
+00:37:13.809 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth=simple from properties
+00:37:13.810 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth.simple.username=admin from properties
+00:37:13.810 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth.simple.password=admin from properties
+00:37:13.846 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+00:37:13.847 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+00:37:13.847 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+00:37:13.847 [main] INFO  org.crsh.ssh.SSHPlugin - Booting SSHD
+00:37:13.882 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+00:37:13.886 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=JavaLanguage,interface=Language]
+00:37:13.887 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=ScriptLanguage,interface=Language]
+00:37:13.894 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+00:37:14.448 [main] INFO  o.a.sshd.common.util.SecurityUtils - Trying to register BouncyCastle as a JCE provider
+00:37:14.628 [main] INFO  o.a.sshd.common.util.SecurityUtils - Trying to register BouncyCastle as a JCE provider
+00:37:16.610 [main] INFO  o.a.sshd.common.util.SecurityUtils - Registration succeeded
+00:37:16.703 [main] INFO  org.crsh.ssh.term.SSHLifeCycle - About to start CRaSSHD
+00:37:16.741 [main] INFO  org.crsh.ssh.term.SSHLifeCycle - CRaSSHD started on port 2000
+00:37:16.742 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+00:37:16.743 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+00:37:16.743 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=CronPlugin,interface=CronPlugin]
+00:37:16.744 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=MailPlugin,interface=MailPlugin]
+00:37:17.169 [main] INFO  o.f.c.internal.util.VersionPrinter - Flyway 3.2.1 by Boxfuse
+00:37:17.315 [main] INFO  o.a.sshd.common.util.SecurityUtils - Registration succeeded
+00:37:17.322 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+00:37:17.473 [main] INFO  org.crsh.ssh.term.SSHLifeCycle - About to start CRaSSHD
+00:37:17.512 [main] ERROR org.crsh.ssh.term.SSHLifeCycle - Could not start CRaSSHD
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.AsynchronousServerSocketChannelImpl.bind(AsynchronousServerSocketChannelImpl.java:162)
+	at org.apache.sshd.common.io.nio2.Nio2Acceptor.bind(Nio2Acceptor.java:59)
+	at org.apache.sshd.SshServer.start(SshServer.java:349)
+	at org.crsh.ssh.term.SSHLifeCycle.init(SSHLifeCycle.java:185)
+	at org.crsh.ssh.SSHPlugin.init(SSHPlugin.java:194)
+	at org.crsh.plugin.PluginManager.getPlugins(PluginManager.java:83)
+	at org.crsh.plugin.PluginContext.start(PluginContext.java:327)
+	at org.crsh.plugin.PluginLifeCycle.start(PluginLifeCycle.java:104)
+	at org.springframework.boot.actuate.autoconfigure.CrshAutoConfiguration$CrshBootstrapBean.init(CrshAutoConfiguration.java:231)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:354)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:305)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:133)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:408)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1570)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1191)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1180)
+	at com.tdu.run.Application.main(Application.java:10)
+00:37:17.512 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+00:37:17.512 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+00:37:17.513 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=CronPlugin,interface=CronPlugin]
+00:37:17.513 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=MailPlugin,interface=MailPlugin]
+00:37:17.596 [main] INFO  o.f.c.i.dbsupport.DbSupportFactory - Database: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true (MySQL 5.6)
+00:37:17.796 [main] INFO  o.f.core.internal.command.DbValidate - Validated 3 migrations (execution time 00:00.177s)
+00:37:17.871 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `test`: 1.0.0.20150128
+00:37:17.872 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `test` is up to date. No migration necessary.
+00:37:18.077 [main] INFO  o.f.c.internal.util.VersionPrinter - Flyway 3.2.1 by Boxfuse
+00:37:18.215 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+00:37:18.498 [main] INFO  o.f.c.i.dbsupport.DbSupportFactory - Database: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true (MySQL 5.6)
+00:37:18.694 [main] INFO  o.f.core.internal.command.DbValidate - Validated 3 migrations (execution time 00:00.175s)
+00:37:18.774 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `test`: 1.0.0.20150128
+00:37:18.775 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `test` is up to date. No migration necessary.
+00:37:19.221 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+00:37:19.223 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:19.224 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:19.225 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+00:37:19.226 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:19.228 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+00:37:19.229 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:19.230 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:19.230 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:19.231 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:19.231 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:19.232 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:19.233 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/flyway || /flyway.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:19.819 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+00:37:19.821 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+00:37:19.829 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+00:37:19.829 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+00:37:19.834 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+00:37:19.839 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+00:37:19.896 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'flywayEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=flywayEndpoint]
+00:37:19.905 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+00:37:19.922 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+00:37:19.931 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+00:37:19.957 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+00:37:19.966 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+00:37:19.977 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+00:37:19.996 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+00:37:20.005 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+00:37:20.006 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:20.007 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:20.008 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:20.009 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:20.010 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+00:37:20.014 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:20.017 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+00:37:20.020 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+00:37:20.023 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:20.027 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+00:37:20.029 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:20.030 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/flyway || /flyway.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:20.031 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:20.031 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:20.316 [main] INFO  o.s.b.c.e.u.UndertowEmbeddedServletContainer - Undertow started on port(s) 9096 (http)
+00:37:20.333 [main] INFO  com.tdu.run.Application - Started Application in 16.491 seconds (JVM running for 17.429)
+00:37:20.601 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+00:37:20.610 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+00:37:20.619 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+00:37:20.619 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+00:37:20.625 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+00:37:20.627 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+00:37:20.677 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'flywayEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=flywayEndpoint]
+00:37:20.688 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+00:37:20.696 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+00:37:20.704 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+00:37:20.712 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+00:37:20.723 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+00:37:20.758 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+00:37:20.778 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+00:37:20.792 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+00:37:20.799 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+00:37:20.939 [main] ERROR o.s.boot.SpringApplication - Application startup failed
+java.lang.RuntimeException: java.net.BindException: Address already in use
+	at io.undertow.Undertow.start(Undertow.java:186)
+	at org.springframework.boot.context.embedded.undertow.UndertowEmbeddedServletContainer.start(UndertowEmbeddedServletContainer.java:121)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:293)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1191)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1180)
+	at com.tdu.run.Application.main(Application.java:10)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:190)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at io.undertow.Undertow.start(Undertow.java:142)
+	... 11 common frames omitted
+00:37:20.942 [main] INFO  o.s.b.l.ClasspathLoggingApplicationListener - Application failed to start with classpath: [file:/Users/tangdu/mystudy/javaspace/simple-boot/bin/, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/1.3.5.RELEASE/188c658fabbce0d1ccc1ae18a1cf58f566208c78/spring-boot-starter-1.3.5.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/1.3.5.RELEASE/1ad40f8edd1b502fb82bfae3a6feb8be3a2b44fa/spring-boot-starter-web-1.3.5.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/1.3.5.RELEASE/b427aa14a4f3a2fba114bcbb60eae6f83ee86706/spring-boot-starter-jdbc-1.3.5.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/1.3.5.RELEASE/2bcfa86bb3afd95eff5252db6d78f2693b706997/spring-boot-autoconfigure-1.3.5.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-actuator/1.3.5.RELEASE/abb4f12506b8cd47689be14b0f54a24dd79f3ed5/spring-boot-starter-actuator-1.3.5.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-aop/1.3.5.RELEASE/478a50b44faab2ada75583637b9f6e789809d069/spring-boot-starter-aop-1.3.5.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-remote-shell/1.3.5.RELEASE/99356b3af0c3f78e203231518d158d8e89408513/spring-boot-starter-remote-shell-1.3.5.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/4.2.6.RELEASE/3b249b371a9afed1ae5fe06f100d80ae14115921/spring-context-support-4.2.6.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-xml/2.4.5/535f27c7e322abc54c9758b50df1594f31ee6524/jackson-dataformat-xml-2.4.5.jar, file:/Users/tangdu/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.glassfish.web/javax.el/2.2.6/232abfe1f919127e9cfcd6e4e2c6324bb394535/javax.el-2.2.6.jar, file:/Users/tangdu/.m2/repository/junit/junit/4.12/junit-4.12.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.flywaydb/flyway-core/3.2.1/88347e9a484152e9b80fbad7648d1b552a8cff78/flyway-core-3.2.1.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.34/46deba4adbdb4967367b013cbc67b7f7373da60a/mysql-connector-java-5.1.34.jar, file:/Users/tangdu/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.1/c261495d1e01df849cdb3cbc941564018f0d3539/joda-time-2.9.1.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/com.alibaba/druid/1.0.20/8f881934850b032367b8c9a79a06c850d93d8866/druid-1.0.20.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/19.0/6ce200f6b23222af3d8abb6b6459e6c44f4bb0e9/guava-19.0.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/net.sf.ehcache/ehcache/2.10.2.2.21/a9b07e3bfb0c9f5f00b633a0c2d67cdf1dd55854/ehcache-2.10.2.2.21.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-undertow/1.3.5.RELEASE/d301e5bfccfa854073dedc67dd5de1d8cb714609/spring-boot-starter-undertow-1.3.5.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.3.5.RELEASE/b218ba5f3bd01e657fbde9b085722da1fafa4f8a/spring-boot-1.3.5.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/1.3.5.RELEASE/a71e1d7fff512b1eadd3426ea1ce5b4cc703c429/spring-boot-starter-logging-1.3.5.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.2.6.RELEASE/a1c6ef01f18888f51fc5054c65ef4787b7cf0a1e/spring-core-4.2.6.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.16/d64fb662c9e42789149f5078a62a22edda786c6a/snakeyaml-1.16.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-validation/1.3.5.RELEASE/c83a6cc60a95faace7e03c524d60fc9de1329f57/spring-boot-starter-validation-1.3.5.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.6.6/5108dde6049374ba980b360e1ecff49847baba4a/jackson-databind-2.6.6.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.2.6.RELEASE/d5ce949da3f3266f118ed899a153413613b503ad/spring-web-4.2.6.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.2.6.RELEASE/7c7ea475d33287e0e3a92e98ccbe0ad6a0dbb9ca/spring-webmvc-4.2.6.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-jdbc/8.0.33/7f1b6d609f9c2e045e8d7759e96605841fffdf82/tomcat-jdbc-8.0.33.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.2.6.RELEASE/16075bfb0901a5b89c5be975365ff09b2df04abb/spring-jdbc-4.2.6.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator/1.3.5.RELEASE/97b25693835ca5bf436dea760fe337833d6aa51b/spring-boot-actuator-1.3.5.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.2.6.RELEASE/5efbfccb19efda2956b8977561bf4da6b15b0d0e/spring-aop-4.2.6.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.8.9/db28774f477f07220eac18d5ec9c4e01f48589d7/aspectjweaver-1.8.9.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.crashub/crash.cli/1.3.2/98101f8591be8612ddd5fec2ae884c3f1026eddc/crash.cli-1.3.2.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.crashub/crash.connectors.ssh/1.3.2/3705258c976ddc428ad0d72be99bc4f7891c408/crash.connectors.ssh-1.3.2.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.crashub/crash.embed.spring/1.3.2/6ca5b3cffe798ad4b9b42356b4af179e9f21891e/crash.embed.spring-1.3.2.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.crashub/crash.plugins.cron/1.3.2/40a5063e6c930ede0ce1d59baf592b7bdcafb1ff/crash.plugins.cron-1.3.2.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.crashub/crash.plugins.mail/1.3.2/b88f401ff420b678d35328b685e23b7008741633/crash.plugins.mail-1.3.2.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.crashub/crash.shell/1.3.2/3bbaaa18968b9c25f850c7f0469cd8fc3fcd0b7e/crash.shell-1.3.2.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy/2.4.6/844cb06c553a5e6a736f44aa2b67d25bf6a34fde/groovy-2.4.6.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/com.sun.mail/javax.mail/1.5.5/ffcd34b5de820f35bcc9303649cf6ab2c65ad44e/javax.mail-1.5.5.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.2.6.RELEASE/d4a319fb4d949fb6313f45c929947b9b4e26283e/spring-beans-4.2.6.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.2.6.RELEASE/bbf3c8526fe37bb341507f28db17882d4348dbca/spring-context-4.2.6.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.4.5/af5432247be7a0248a03b900687bb9a74a68ccfa/jackson-module-jaxb-annotations-2.4.5.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/stax2-api/3.1.4/ac19014b1e6a7c08aad07fe114af792676b685b7/stax2-api-3.1.4.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/javax.el/javax.el-api/2.2.5/370140e991eefb212a6d6baedbce585f00ef76e0/javax.el-api-2.2.5.jar, file:/Users/tangdu/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/io.undertow/undertow-core/1.3.22.Final/8dadd3c4c806ffb611e58b4536c27a06f77e1d9c/undertow-core-1.3.22.Final.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/io.undertow/undertow-servlet/1.3.22.Final/7340a82eb327dedf7367d2cbb61e5b928c87db09/undertow-servlet-1.3.22.Final.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/io.undertow/undertow-websockets-jsr/1.3.22.Final/e12fdece992e6c6b85bf3589e663d82ca1355198/undertow-websockets-jsr-1.3.22.Final.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.el/3.0.0/dd532526e7c8de48e40419e6af1183658a973379/javax.el-3.0.0.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.7/9865cf6994f9ff13fce0bf93f2054ef6c65bb462/logback-classic-1.1.7.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.21/331b564a3a42f002a0004b039c1c430da89062cd/jcl-over-slf4j-1.7.21.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.21/2f22c882ffa479d1e9ff4eb0e8e2c29f2a0871ed/jul-to-slf4j-1.7.21.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.21/b3700d97464d99bdcd42c0177d6e7951c94d75ff/log4j-over-slf4j-1.7.21.jar, file:/Users/tangdu/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.0.33/31423f2d493cf1f7cf5f0082c9f94640e93b8c1b/tomcat-embed-el-8.0.33.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-validator/5.2.4.Final/fb18766b576aa6632bcfe9a20a023cbd52bf9769/hibernate-validator-5.2.4.Final.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.2.6.RELEASE/c0182d73f348ab11d51d45cbe29f3820c32d0ccc/spring-expression-4.2.6.RELEASE.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-juli/8.0.33/330aecfa895156cea91c576cb6609537152761f9/tomcat-juli-8.0.33.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.2.6.RELEASE/ba7502c0644414748b1eeb65b4193b05d335a110/spring-tx-4.2.6.RELEASE.jar, file:/Users/tangdu/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.apache.sshd/sshd-core/0.11.0/450da44553c98805ca6bb5709cad54df4acb802a/sshd-core-0.11.0.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.apache.sshd/sshd-pam/0.11.0/b939ceb742cefc1c632132111b8e4facc41b3d38/sshd-pam-0.11.0.jar, file:/Users/tangdu/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.51/bcprov-jdk15on-1.51.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.51/6c8c1f61bf27a09f9b1a8abc201523669bba9597/bcpkix-jdk15on-1.51.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.apache.mina/mina-core/2.0.7/c878e2aa82de748474a624ec3933e4604e446dec/mina-core-2.0.7.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/it.sauronsoftware.cron4j/cron4j/2.2.5/da0dd0edee48b570cd1e23895e0ac80e09eb272b/cron4j-2.2.5.jar, file:/Users/tangdu/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.2.1.Final/fedf11b3d4665a434b554a5891fe7f208f029f45/jboss-logging-3.2.1.Final.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.jboss.xnio/xnio-api/3.3.6.Final/a56420f5d0327ddb4eab47bdb4178ea1df480df3/xnio-api-3.3.6.Final.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.jboss.xnio/xnio-nio/3.3.6.Final/49098a2d34fcfc18360049aaa4679518de165b6/xnio-nio-3.3.6.Final.jar, file:/Users/tangdu/.m2/repository/org/jboss/spec/javax/annotation/jboss-annotations-api_1.2_spec/1.0.0.Final/jboss-annotations-api_1.2_spec-1.0.0.Final.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.websocket/jboss-websocket-api_1.1_spec/1.1.0.Final/a89cc6c8f15c06aed6fe81482e168248ad7c76d3/jboss-websocket-api_1.1_spec-1.1.0.Final.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.7/7873092d39ef741575ca91378a6a21c388363ac8/logback-core-1.1.7.jar, file:/Users/tangdu/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.1.0/dbbd699a1486ad0f2ed6f5af6cfed66acacb9056/classmate-1.1.0.jar, file:/Users/tangdu/.m2/repository/net/sf/jpam/jpam/1.1/jpam-1.1.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.servlet/jboss-servlet-api_3.1_spec/1.0.0.Final/f87e23319ee434bca087c339ce456916a6ade08b/jboss-servlet-api_3.1_spec-1.0.0.Final.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/139535a69a4239db087de9bab0bee568bf8e0b70/slf4j-api-1.7.21.jar, file:/Users/tangdu/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.jar, file:/Users/tangdu/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.6/2eb801df67aacaf5b1deb4ac626e1964508e47b/jackson-core-2.6.6.jar]
+00:37:25.388 [Thread-5] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d59774c: startup date [Wed Jun 15 00:37:04 CST 2016]; root of context hierarchy
+00:37:25.390 [Thread-5] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+00:37:25.393 [Thread-5] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans on shutdown
+00:37:25.394 [Thread-5] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans
+00:37:25.397 [Thread-5] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+00:37:25.397 [Thread-5] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+00:37:25.406 [Thread-5] INFO  o.s.c.e.EhCacheManagerFactoryBean - Shutting down EhCache CacheManager
+00:37:25.410 [Thread-5] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+00:37:28.529 [main] INFO  com.tdu.run.Application - Starting Application on tangdu.local with PID 18384 (/Users/tangdu/mystudy/javaspace/simple-boot/bin started by tangdu in /Users/tangdu/mystudy/javaspace/simple-boot)
+00:37:28.532 [main] INFO  com.tdu.run.Application - No active profile set, falling back to default profiles: default
+00:37:28.810 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+00:37:28.865 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@256c668: startup date [Wed Jun 15 00:37:28 CST 2016]; root of context hierarchy
+00:37:31.226 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8437245] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:37:31.400 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$f155a863] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:37:32.303 [main] INFO  org.xnio - XNIO version 3.3.6.Final
+00:37:32.320 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.3.6.Final
+00:37:32.512 [main] WARN  io.undertow.websockets.jsr - UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+00:37:32.514 [main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+00:37:32.549 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+00:37:32.551 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3686 ms
+00:37:34.757 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+00:37:34.772 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+00:37:34.772 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'com.tdu.simple.servlet.TraceServlet' to [/boot_trace/*]
+00:37:34.776 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'metricFilter' to: [/*]
+00:37:34.781 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+00:37:34.781 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+00:37:34.781 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+00:37:34.781 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+00:37:34.781 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+00:37:34.782 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'webStatFilter' to: [/*]
+00:37:34.782 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+00:37:35.506 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@256c668: startup date [Wed Jun 15 00:37:28 CST 2016]; root of context hierarchy
+00:37:35.803 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index || /]}" onto public java.lang.String com.tdu.simple.web.IndexController.index()
+00:37:35.810 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+00:37:35.812 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+00:37:35.947 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:37:35.948 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:37:36.534 [main] INFO  o.s.c.e.EhCacheManagerFactoryBean - Initializing EhCache CacheManager
+00:37:37.149 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+00:37:37.157 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+00:37:37.160 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+00:37:37.193 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=CronPlugin,interface=CronPlugin]
+00:37:37.200 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=MailPlugin,interface=MailPlugin]
+00:37:37.207 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+00:37:37.211 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+00:37:37.215 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=JavaLanguage,interface=Language]
+00:37:37.217 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=ScriptLanguage,interface=Language]
+00:37:37.218 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+00:37:37.219 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+00:37:37.227 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.port=2000 from properties
+00:37:37.235 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.auth_timeout=600000 from properties
+00:37:37.236 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.idle_timeout=600000 from properties
+00:37:37.236 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.default_encoding=UTF-8 from properties
+00:37:37.237 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth=simple from properties
+00:37:37.237 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth.simple.username=admin from properties
+00:37:37.237 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth.simple.password=admin from properties
+00:37:37.254 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+00:37:37.255 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+00:37:37.256 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+00:37:37.257 [main] INFO  org.crsh.ssh.SSHPlugin - Booting SSHD
+00:37:37.313 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+00:37:37.325 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=JavaLanguage,interface=Language]
+00:37:37.326 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=ScriptLanguage,interface=Language]
+00:37:37.341 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+00:37:37.951 [main] INFO  o.a.sshd.common.util.SecurityUtils - Trying to register BouncyCastle as a JCE provider
+00:37:39.743 [main] INFO  o.a.sshd.common.util.SecurityUtils - Registration succeeded
+00:37:39.797 [main] INFO  org.crsh.ssh.term.SSHLifeCycle - About to start CRaSSHD
+00:37:39.829 [main] INFO  org.crsh.ssh.term.SSHLifeCycle - CRaSSHD started on port 2000
+00:37:39.830 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+00:37:39.830 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+00:37:39.830 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=CronPlugin,interface=CronPlugin]
+00:37:39.831 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=MailPlugin,interface=MailPlugin]
+00:37:40.249 [main] INFO  o.f.c.internal.util.VersionPrinter - Flyway 3.2.1 by Boxfuse
+00:37:40.362 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+00:37:40.565 [main] INFO  o.f.c.i.dbsupport.DbSupportFactory - Database: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true (MySQL 5.6)
+00:37:40.698 [main] INFO  o.f.core.internal.command.DbValidate - Validated 3 migrations (execution time 00:00.121s)
+00:37:40.756 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `test`: 1.0.0.20150128
+00:37:40.757 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `test` is up to date. No migration necessary.
+00:37:41.520 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+00:37:41.520 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:41.521 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:41.522 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:41.523 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:41.526 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:41.527 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:41.528 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:41.530 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+00:37:41.530 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:41.531 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+00:37:41.532 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/flyway || /flyway.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:41.533 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:37:42.007 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+00:37:42.009 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+00:37:42.015 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+00:37:42.016 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+00:37:42.021 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+00:37:42.023 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+00:37:42.057 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'flywayEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=flywayEndpoint]
+00:37:42.065 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+00:37:42.072 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+00:37:42.079 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+00:37:42.088 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+00:37:42.094 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+00:37:42.100 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+00:37:42.114 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+00:37:42.124 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+00:37:42.131 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+00:37:42.217 [main] INFO  o.s.b.c.e.u.UndertowEmbeddedServletContainer - Undertow started on port(s) 9096 (http)
+00:37:42.224 [main] INFO  com.tdu.run.Application - Started Application in 14.073 seconds (JVM running for 14.715)
+00:38:00.144 [pool-5-thread-1] INFO  o.a.s.server.session.ServerSession - Server session created from /127.0.0.1:62650
+00:38:00.213 [pool-5-thread-1] INFO  o.a.s.server.session.ServerSession - Kex: server->client aes128-ctr hmac-md5 none
+00:38:00.213 [pool-5-thread-1] INFO  o.a.s.server.session.ServerSession - Kex: client->server aes128-ctr hmac-md5 none
+00:38:03.419 [pool-5-thread-5] INFO  o.a.s.s.s.ServerUserAuthService - Session admin@/127.0.0.1:62650 authenticated
+00:38:06.849 [pool-2-thread-3] ERROR o.c.shell.impl.command.CRaSHSession - Error while evaluating request 'Echo' Could not compile command
+org.crsh.shell.impl.command.spi.CommandException: Could not compile command
+	at org.crsh.lang.impl.groovy.GroovyCompiler.compileCommand(GroovyCompiler.java:136)
+	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:128)
+	at org.crsh.lang.LanguageCommandResolver.resolveCommand2(LanguageCommandResolver.java:109)
+	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:100)
+	at org.crsh.shell.impl.command.CRaSH.getCommand(CRaSH.java:100)
+	at org.crsh.shell.impl.command.CRaSHSession.getCommand(CRaSHSession.java:96)
+	at org.crsh.lang.impl.script.PipeLineFactory.create(PipeLineFactory.java:89)
+	at org.crsh.lang.impl.script.ScriptRepl.eval(ScriptRepl.java:88)
+	at org.crsh.shell.impl.command.CRaSHSession.createProcess(CRaSHSession.java:163)
+	at org.crsh.shell.impl.async.AsyncProcess.execute(AsyncProcess.java:172)
+	at org.crsh.console.Console.iterate(Console.java:219)
+	at org.crsh.console.Console.on(Console.java:158)
+	at org.crsh.console.Console.on(Console.java:135)
+	at org.crsh.console.jline.JLineProcessor.run(JLineProcessor.java:204)
+	at org.crsh.ssh.term.CRaSHCommand.run(CRaSHCommand.java:99)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+Echo: 6: Invalid duplicate class definition of class Echo : The source Echo contains at least two definitions of the class Echo.
+One of the classes is an explicit generated class using the class statement, the other is a class generated from the script body based on the file name. Solutions are to change the file name or to change the class name.
+ @ line 6, column 1.
+   class Echo{
+   ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:310)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:946)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:593)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:569)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:546)
+	at org.crsh.lang.impl.groovy.GroovyCompiler.compileCommand(GroovyCompiler.java:133)
+	... 15 common frames omitted
+00:41:53.828 [XNIO-2 task-1] INFO  io.undertow.servlet - Initializing Spring FrameworkServlet 'dispatcherServlet'
+00:41:53.828 [XNIO-2 task-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+00:41:53.849 [XNIO-2 task-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+00:48:09.880 [Thread-5] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@256c668: startup date [Wed Jun 15 00:37:28 CST 2016]; root of context hierarchy
+00:48:09.882 [Thread-5] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+00:48:09.886 [Thread-5] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans on shutdown
+00:48:09.887 [Thread-5] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans
+00:48:09.890 [Thread-5] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+00:48:09.890 [Thread-5] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+00:48:09.896 [Thread-5] INFO  o.s.c.e.EhCacheManagerFactoryBean - Shutting down EhCache CacheManager
+00:48:09.900 [Thread-5] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+00:48:09.903 [Thread-5] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+00:48:20.292 [main] INFO  com.tdu.run.Application - Starting Application on tangdu.local with PID 18399 (/Users/tangdu/mystudy/javaspace/simple-boot/bin started by tangdu in /Users/tangdu/mystudy/javaspace/simple-boot)
+00:48:20.300 [main] INFO  com.tdu.run.Application - No active profile set, falling back to default profiles: default
+00:48:20.508 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+00:48:20.584 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ef87e2e: startup date [Wed Jun 15 00:48:20 CST 2016]; root of context hierarchy
+00:48:22.179 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c1b03710] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:48:22.330 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$ac26d2e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:48:22.855 [main] INFO  org.xnio - XNIO version 3.3.6.Final
+00:48:22.872 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.3.6.Final
+00:48:22.943 [main] WARN  io.undertow.websockets.jsr - UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+00:48:22.944 [main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+00:48:22.957 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+00:48:22.958 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2374 ms
+00:48:24.169 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+00:48:24.174 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+00:48:24.175 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'com.tdu.simple.servlet.TraceServlet' to [/boot_trace/*]
+00:48:24.177 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'metricFilter' to: [/*]
+00:48:24.178 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+00:48:24.179 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+00:48:24.179 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+00:48:24.179 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+00:48:24.179 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+00:48:24.179 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'webStatFilter' to: [/*]
+00:48:24.179 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+00:48:24.671 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ef87e2e: startup date [Wed Jun 15 00:48:20 CST 2016]; root of context hierarchy
+00:48:24.801 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index || /]}" onto public java.lang.String com.tdu.simple.web.IndexController.index()
+00:48:24.805 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+00:48:24.806 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+00:48:24.917 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:48:24.917 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:48:25.422 [main] INFO  o.s.c.e.EhCacheManagerFactoryBean - Initializing EhCache CacheManager
+00:48:25.768 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+00:48:25.769 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+00:48:25.770 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+00:48:25.781 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=CronPlugin,interface=CronPlugin]
+00:48:25.784 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=MailPlugin,interface=MailPlugin]
+00:48:25.786 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+00:48:25.788 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+00:48:25.789 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=JavaLanguage,interface=Language]
+00:48:25.789 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=ScriptLanguage,interface=Language]
+00:48:25.790 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+00:48:25.791 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+00:48:25.793 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.port=2000 from properties
+00:48:25.794 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.auth_timeout=600000 from properties
+00:48:25.794 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.idle_timeout=600000 from properties
+00:48:25.794 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.default_encoding=UTF-8 from properties
+00:48:25.794 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth=simple from properties
+00:48:25.795 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth.simple.username=admin from properties
+00:48:25.795 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth.simple.password=admin from properties
+00:48:25.807 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+00:48:25.808 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+00:48:25.808 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+00:48:25.808 [main] INFO  org.crsh.ssh.SSHPlugin - Booting SSHD
+00:48:25.823 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+00:48:25.827 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=JavaLanguage,interface=Language]
+00:48:25.827 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=ScriptLanguage,interface=Language]
+00:48:25.832 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+00:48:26.217 [main] INFO  o.a.sshd.common.util.SecurityUtils - Trying to register BouncyCastle as a JCE provider
+00:48:27.625 [main] INFO  o.a.sshd.common.util.SecurityUtils - Registration succeeded
+00:48:27.685 [main] INFO  org.crsh.ssh.term.SSHLifeCycle - About to start CRaSSHD
+00:48:27.705 [main] INFO  org.crsh.ssh.term.SSHLifeCycle - CRaSSHD started on port 2000
+00:48:27.705 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+00:48:27.705 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+00:48:27.706 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=CronPlugin,interface=CronPlugin]
+00:48:27.706 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=MailPlugin,interface=MailPlugin]
+00:48:27.940 [main] INFO  o.f.c.internal.util.VersionPrinter - Flyway 3.2.1 by Boxfuse
+00:48:28.002 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+00:48:28.243 [main] INFO  o.f.c.i.dbsupport.DbSupportFactory - Database: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true (MySQL 5.6)
+00:48:28.361 [main] INFO  o.f.core.internal.command.DbValidate - Validated 3 migrations (execution time 00:00.106s)
+00:48:28.407 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `test`: 1.0.0.20150128
+00:48:28.407 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `test` is up to date. No migration necessary.
+00:48:29.063 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:48:29.064 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:48:29.065 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:48:29.065 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:48:29.066 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:48:29.069 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:48:29.069 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+00:48:29.070 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+00:48:29.071 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:48:29.071 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:48:29.072 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/flyway || /flyway.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:48:29.073 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+00:48:29.073 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+00:48:29.401 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+00:48:29.402 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+00:48:29.410 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+00:48:29.410 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+00:48:29.414 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+00:48:29.416 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+00:48:29.445 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'flywayEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=flywayEndpoint]
+00:48:29.454 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+00:48:29.460 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+00:48:29.467 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+00:48:29.473 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+00:48:29.480 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+00:48:29.487 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+00:48:29.500 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+00:48:29.506 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+00:48:29.513 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+00:48:29.599 [main] INFO  o.s.b.c.e.u.UndertowEmbeddedServletContainer - Undertow started on port(s) 9096 (http)
+00:48:29.606 [main] INFO  com.tdu.run.Application - Started Application in 9.634 seconds (JVM running for 10.502)
+00:48:42.381 [XNIO-2 task-1] INFO  io.undertow.servlet - Initializing Spring FrameworkServlet 'dispatcherServlet'
+00:48:42.381 [XNIO-2 task-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+00:48:42.407 [XNIO-2 task-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+00:52:06.676 [XNIO-2 task-8] INFO  SystemLogInfo - before execution(String com.tdu.simple.service.TraceService.echo(String))
+00:52:06.684 [XNIO-2 task-8] INFO  SystemLogInfo - around execution(String com.tdu.simple.service.TraceService.echo(String))	 Use time : 9 ms!
+00:52:06.685 [XNIO-2 task-8] INFO  SystemLogInfo - after execution(String com.tdu.simple.service.TraceService.echo(String))
+00:53:09.431 [Thread-5] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ef87e2e: startup date [Wed Jun 15 00:48:20 CST 2016]; root of context hierarchy
+00:53:09.433 [Thread-5] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+00:53:09.438 [Thread-5] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans on shutdown
+00:53:09.438 [Thread-5] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans
+00:53:09.441 [Thread-5] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+00:53:09.441 [Thread-5] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+00:53:09.450 [Thread-5] INFO  o.s.c.e.EhCacheManagerFactoryBean - Shutting down EhCache CacheManager
+00:53:09.454 [Thread-5] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+00:53:09.458 [Thread-5] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+09:36:17.538 [main] INFO  com.tdu.run.Application - Starting Application on tangdu.local with PID 18674 (/Users/tangdu/mystudy/javaspace/simple-boot/bin started by tangdu in /Users/tangdu/mystudy/javaspace/simple-boot)
+09:36:17.542 [main] INFO  com.tdu.run.Application - No active profile set, falling back to default profiles: default
+09:36:17.820 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+09:36:17.835 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a7e666f: startup date [Wed Jun 15 09:36:17 CST 2016]; root of context hierarchy
+09:36:20.089 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$26ee2db4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:36:20.278 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$700063d2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:36:20.828 [main] INFO  org.xnio - XNIO version 3.3.6.Final
+09:36:20.853 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.3.6.Final
+09:36:20.944 [main] WARN  io.undertow.websockets.jsr - UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+09:36:20.945 [main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+09:36:20.967 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+09:36:20.968 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3133 ms
+09:36:22.038 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+09:36:22.066 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+09:36:22.067 [main] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'com.tdu.simple.servlet.TraceServlet' to [/boot_trace/*]
+09:36:22.070 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'metricFilter' to: [/*]
+09:36:22.072 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+09:36:22.072 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+09:36:22.073 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+09:36:22.073 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+09:36:22.073 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+09:36:22.073 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'webStatFilter' to: [/*]
+09:36:22.073 [main] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+09:36:23.211 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/getInfo],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.tdu.simple.web.ApiController.getInfo(java.lang.String)
+09:36:23.212 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/putInfo],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.tdu.simple.web.ApiController.putInfo(java.lang.String)
+09:36:23.213 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/deleteInfo/{id}],methods=[DELETE]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.tdu.simple.web.ApiController.deleteInfo(java.lang.String)
+09:36:23.214 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index || /]}" onto public java.lang.String com.tdu.simple.web.IndexController.index()
+09:36:23.215 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+09:36:23.219 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+09:36:23.221 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+09:36:23.222 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+09:36:23.227 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+09:36:23.228 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:36:23.760 [main] INFO  o.s.c.e.EhCacheManagerFactoryBean - Initializing EhCache CacheManager
+09:36:24.440 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:36:24.441 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:36:24.442 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/flyway || /flyway.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:36:24.443 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:36:24.444 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+09:36:24.445 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:36:24.446 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:36:24.447 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+09:36:24.448 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:36:24.448 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:36:24.450 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:36:24.451 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+09:36:24.452 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:36:24.902 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a7e666f: startup date [Wed Jun 15 09:36:17 CST 2016]; root of context hierarchy
+09:36:25.020 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:36:25.020 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:36:25.323 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+09:36:25.324 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+09:36:25.326 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+09:36:25.335 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=CronPlugin,interface=CronPlugin]
+09:36:25.340 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=MailPlugin,interface=MailPlugin]
+09:36:25.342 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+09:36:25.343 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+09:36:25.345 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=JavaLanguage,interface=Language]
+09:36:25.345 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=ScriptLanguage,interface=Language]
+09:36:25.346 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+09:36:25.347 [main] INFO  org.crsh.plugin.PluginManager - Loaded plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+09:36:25.350 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.port=2000 from properties
+09:36:25.351 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.auth_timeout=600000 from properties
+09:36:25.351 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.idle_timeout=600000 from properties
+09:36:25.351 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property ssh.default_encoding=UTF-8 from properties
+09:36:25.351 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth=simple from properties
+09:36:25.352 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth.simple.username=admin from properties
+09:36:25.352 [main] INFO  o.s.b.a.a.CrshAutoConfiguration$CrshBootstrapBean - Configuring property auth.simple.password=admin from properties
+09:36:25.366 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
+09:36:25.366 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+09:36:25.367 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+09:36:25.367 [main] INFO  org.crsh.ssh.SSHPlugin - Booting SSHD
+09:36:25.385 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+09:36:25.389 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=JavaLanguage,interface=Language]
+09:36:25.389 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=ScriptLanguage,interface=Language]
+09:36:25.394 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+09:36:25.792 [main] INFO  o.a.sshd.common.util.SecurityUtils - Trying to register BouncyCastle as a JCE provider
+09:36:27.385 [main] INFO  o.a.sshd.common.util.SecurityUtils - Registration succeeded
+09:36:27.450 [main] INFO  org.crsh.ssh.term.SSHLifeCycle - About to start CRaSSHD
+09:36:27.475 [main] INFO  org.crsh.ssh.term.SSHLifeCycle - CRaSSHD started on port 2000
+09:36:27.475 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
+09:36:27.476 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
+09:36:27.476 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=CronPlugin,interface=CronPlugin]
+09:36:27.476 [main] INFO  org.crsh.plugin.PluginManager - Initialized plugin Plugin[type=MailPlugin,interface=MailPlugin]
+09:36:27.594 [main] INFO  o.f.c.internal.util.VersionPrinter - Flyway 3.2.1 by Boxfuse
+09:36:27.666 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+09:36:27.845 [main] INFO  o.f.c.i.dbsupport.DbSupportFactory - Database: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true (MySQL 5.6)
+09:36:27.966 [main] INFO  o.f.core.internal.command.DbValidate - Validated 3 migrations (execution time 00:00.111s)
+09:36:28.021 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `test`: 1.0.0.20150128
+09:36:28.022 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `test` is up to date. No migration necessary.
+09:36:28.506 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+09:36:28.508 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+09:36:28.516 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+09:36:28.516 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+09:36:28.521 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+09:36:28.524 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+09:36:28.558 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'flywayEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=flywayEndpoint]
+09:36:28.567 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+09:36:28.574 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+09:36:28.593 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+09:36:28.602 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+09:36:28.608 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+09:36:28.615 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+09:36:28.624 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+09:36:28.630 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+09:36:28.638 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+09:36:28.645 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+09:36:28.645 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+09:36:28.681 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+09:36:28.697 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+09:36:28.778 [main] WARN  s.d.s.r.o.OperationImplicitParameterReader - Coercing to be of type string. This may not even be a scalar type in actuality
+09:36:28.915 [main] WARN  s.d.s.r.o.OperationImplicitParameterReader - Coercing to be of type string. This may not even be a scalar type in actuality
+09:36:28.926 [main] WARN  s.d.s.r.o.OperationImplicitParameterReader - Coercing to be of type string. This may not even be a scalar type in actuality
+09:36:28.966 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: indexUsingGET_1
+09:36:28.968 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: indexUsingHEAD_1
+09:36:28.970 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: indexUsingPOST_1
+09:36:28.972 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: indexUsingPUT_1
+09:36:28.977 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: indexUsingPATCH_1
+09:36:28.987 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: indexUsingDELETE_1
+09:36:28.989 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: indexUsingOPTIONS_1
+09:36:28.992 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: indexUsingTRACE_1
+09:36:29.123 [main] INFO  o.s.b.c.e.u.UndertowEmbeddedServletContainer - Undertow started on port(s) 9096 (http)
+09:36:29.130 [main] INFO  com.tdu.run.Application - Started Application in 11.913 seconds (JVM running for 12.37)
+09:36:38.138 [XNIO-2 task-1] INFO  io.undertow.servlet - Initializing Spring FrameworkServlet 'dispatcherServlet'
+09:36:38.138 [XNIO-2 task-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+09:36:38.153 [XNIO-2 task-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+09:40:03.135 [Thread-5] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a7e666f: startup date [Wed Jun 15 09:36:17 CST 2016]; root of context hierarchy
+09:40:03.138 [Thread-5] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+09:40:03.139 [Thread-5] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+09:40:03.143 [Thread-5] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans on shutdown
+09:40:03.143 [Thread-5] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans
+09:40:03.144 [Thread-5] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+09:40:03.145 [Thread-5] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+09:40:03.161 [Thread-5] INFO  o.s.c.e.EhCacheManagerFactoryBean - Shutting down EhCache CacheManager
+09:40:03.166 [Thread-5] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+09:40:03.169 [Thread-5] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
