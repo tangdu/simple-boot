@@ -2,9 +2,9 @@
 apply plugin: "war"
 apply plugin: "spring-boot"
 apply plugin: 'eclipse'
+apply plugin: 'docker'
 
-group ="com.tdu"
-version = "1.0.0"
+group ="simple"
 
 springBoot {
     mainClass = "com.tdu.run.Application"
@@ -15,8 +15,13 @@ targetCompatibility = 1.7
 	
 [compileJava,compileTestJava,javadoc]*.options*.encoding = 'UTF-8'
   
+  
+
 repositories {
    mavenLocal()
+   maven {
+   	url uri('/Users/tangdu/.m2/repository')
+   }
    mavenCentral()
 }
 
@@ -27,11 +32,12 @@ war {
 
 buildscript {
 	repositories {
+	   mavenLocal()
        mavenCentral()
     }
     dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${spring_boot_version}")
-		//classpath('se.transmode.gradle:gradle-docker:1.2')
+		classpath('se.transmode.gradle:gradle-docker:1.2')
 	}
 }
 
@@ -53,6 +59,8 @@ dependencies{
 		"org.springframework.boot:spring-boot-starter-actuator:${spring_boot_version}",
 		"org.springframework.boot:spring-boot-starter-aop:${spring_boot_version}",
 		"org.springframework.boot:spring-boot-starter-remote-shell:${spring_boot_version}",
+		"org.springframework.boot:spring-boot-starter-test:${spring_boot_version}",
+		"org.springframework.boot:spring-boot-starter-redis:${spring_boot_version}",
 		
 		
 		"org.springframework:spring-context-support:${spring_version}",
@@ -67,12 +75,57 @@ dependencies{
 		"com.alibaba:druid:${druid_version}",
 		"com.google.guava:guava:${guava_version}",
 		"net.sf.ehcache:ehcache:${ehcache_version}",
+		"org.mybatis:mybatis:${mybatis_version}",
+		"org.mybatis:mybatis-spring:${mybatis_spring_version}",
 		
 		"org.webjars:jqwidgets:${jqwidgets_version}",
+		//"org.webjars:sui3:${sui3_version}",
 		
 		"io.springfox:springfox-swagger-ui:${swagger_version}",
-		"io.springfox:springfox-swagger2:${swagger_version}"
+		"io.springfox:springfox-swagger2:${swagger_version}",
+		
+		//"de.codecentric:spring-boot-admin-server:1.3.3",
+		//"de.codecentric:spring-boot-admin-server-ui:1.3.3",
+		//"de.codecentric:spring-boot-admin-starter-client:1.3.3",
 	)
+}
+
+ sourceSets {
+      main {
+          java {
+              srcDir "src/main/java"
+          }
+          resources {
+              srcDir "src/main/resources"
+              srcDir "src/main/docker"
+          }
+      }
+      test {
+          java {
+              srcDir "src/test/java"
+          }
+          resources {
+              srcDir "src/test/resources"
+          }
+      }
+  }
+
+//docker任务
+task buildDocker(type: Docker, dependsOn: build) {
+  push = true
+  applicationName = war.baseName
+  dockerfile = file('src/main/docker/Dockerfile')
+  doFirst {
+  	//docker add是相对于dockerfile的路径，所以简便做法把打包好的war复制到docker目录下.
+    copy {
+      from war
+      into stageDir
+    }
+    /*copy {
+      from 'src/main/docker/jre-8u91-linux-x64.rpm'
+      into stageDir
+    }*/
+  }
 }
 
 //源代码打包任务

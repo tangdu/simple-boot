@@ -5,7 +5,11 @@ org.springframework.boot.SpringApplicationRunListener=\
 # Auto Configuration
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.tdu.simple.autoconfiguration.ModuleAutoConfiguration,\
-com.tdu.simple.autoconfiguration.DruidAutoConfiguration,\
-com.tdu.simple.autoconfiguration.EhcacheAutoConfiguration,\
-com.tdu.simple.autoconfiguration.SimpleAopAutoConfiguration,\
-com.tdu.simple.autoconfiguration.SwaggerAutoConfiguration
+com.tdu.simple.autoconfiguration.druid.DruidAutoConfiguration,\
+com.tdu.simple.autoconfiguration.cache.EhcacheAutoConfiguration,\
+com.tdu.simple.autoconfiguration.cache.RedisAutoConfiguration,\
+com.tdu.simple.autoconfiguration.cache.CompositeCacheAuconfiguration,\
+com.tdu.simple.autoconfiguration.aop.SimpleAspectAutoConfiguration,\
+com.tdu.simple.autoconfiguration.SwaggerAutoConfiguration,\
+com.tdu.simple.autoconfiguration.MonitorAutoConfiguration,\
+com.tdu.simple.autoconfiguration.mybatis.MyBatisAutoConfiguration

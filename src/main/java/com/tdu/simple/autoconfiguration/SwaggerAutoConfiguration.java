@@ -17,12 +17,19 @@ public class SwaggerAutoConfiguration {
 
 	@Bean
 	public Docket createDocket() {
-		return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo()).select()
-				.apis(RequestHandlerSelectors.basePackage("com.tdu.simple.web")).paths(PathSelectors.any()).build();
+		return new Docket(DocumentationType.SWAGGER_2)
+			.apiInfo(apiInfo())
+			.select()
+			.apis(RequestHandlerSelectors.basePackage("com.tdu.simple"))
+			.paths(PathSelectors.any())
+			.build();
 	}
 
 	private ApiInfo apiInfo() {
-		return new ApiInfoBuilder().title("Swagger2 Rest API").description("simple case")
-				.termsOfServiceUrl("http://gitbub.io.tangdu").version("1.0.0").build();
+		return new ApiInfoBuilder().title("Swagger2 Rest API")
+			.description("SimpleBoot Rest API 接口，请参照开发.")
+			.termsOfServiceUrl("http://gitbub.io.tangdu")
+			.version("1.0.0")
+			.build();
 	}
 }

@@ -9,8 +9,7 @@ class Echo{
 	@Usage("Say Hello")
 	@Command
 	def main(InvocationContext context) {
-		def s='没有时间了。'
-
+		def s='no more time,baby'
 		return "我知道，${s}"
 	}
 }

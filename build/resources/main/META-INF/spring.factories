@@ -7,4 +7,6 @@ org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.tdu.simple.autoconfiguration.ModuleAutoConfiguration,\
 com.tdu.simple.autoconfiguration.DruidAutoConfiguration,\
 com.tdu.simple.autoconfiguration.EhcacheAutoConfiguration,\
-com.tdu.simple.autoconfiguration.SimpleAopAutoConfiguration
+com.tdu.simple.autoconfiguration.SimpleAopAutoConfiguration,\
+com.tdu.simple.autoconfiguration.SwaggerAutoConfiguration,\
+com.tdu.simple.autoconfiguration.MonitorAutoConfiguration
