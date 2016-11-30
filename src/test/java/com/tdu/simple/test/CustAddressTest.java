@@ -1,4 +1,4 @@
-package com.tdu.simple.test;
+	package com.tdu.simple.test;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
@@ -7,6 +7,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized.Parameters;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -25,6 +28,7 @@ import com.tdu.simple.service.CustAddressService;
 @WebAppConfiguration
 public class CustAddressTest {
 
+	private static final Logger logger=LoggerFactory.getLogger(CustAddressTest.class);
 	@Autowired
 	CustAddressService custAddressService;
 
@@ -45,6 +49,14 @@ public class CustAddressTest {
 
 	@Test
 	public void testAdd() {
+		MDC.put("sessionId", "user-session");
+		try {
+			throw new NullPointerException();
+		} catch (Exception e) {
+			logger.error("ssss",e);
+		}
+		logger.info("测试运行");
+		
 		CustAddress address = new CustAddress();
 		address.setAddress("dd");
 		address.setCustId("1234");

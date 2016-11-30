@@ -61,6 +61,7 @@ dependencies{
 		"org.springframework.boot:spring-boot-starter-remote-shell:${spring_boot_version}",
 		"org.springframework.boot:spring-boot-starter-test:${spring_boot_version}",
 		"org.springframework.boot:spring-boot-starter-redis:${spring_boot_version}",
+		"org.springframework.boot:spring-boot-starter-amqp:${spring_boot_version}",
 		
 		
 		"org.springframework:spring-context-support:${spring_version}",
@@ -78,8 +79,9 @@ dependencies{
 		"org.mybatis:mybatis:${mybatis_version}",
 		"org.mybatis:mybatis-spring:${mybatis_spring_version}",
 		
+		//"com.dangdang:sharding-jdbc:${sharding_jdbc_version}",
 		"org.webjars:jqwidgets:${jqwidgets_version}",
-		//"org.webjars:sui3:${sui3_version}",
+		//"com.tdu.framework.webjars:${sui3_version}",
 		
 		"io.springfox:springfox-swagger-ui:${swagger_version}",
 		"io.springfox:springfox-swagger2:${swagger_version}",
@@ -128,13 +130,15 @@ task buildDocker(type: Docker, dependsOn: build) {
   }
 }
 
+
+
 //源代码打包任务
 task sourceJar (type : Jar) {
 	classifier = "sources"
 	from sourceSets.main.allSource
 }
 
-//Java 文档打包任务
+//Java文档打包任务
 task javadocJar (type: Jar, dependsOn: javadoc) {
 	classifier = "javadoc"
 	from javadoc.destinationDir

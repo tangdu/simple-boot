@@ -22,11 +22,11 @@ public interface CustAddressDao {
 
 	/**
 	 */
-	CustAddress queryById(Integer id);
+	List<CustAddress> queryAll();
 
 	/**
 	 */
-	List<CustAddress> queryAll();
+	CustAddress queryById(Integer id);
 
 	/**
 	 */
